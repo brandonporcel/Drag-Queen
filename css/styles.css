@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	--dark: #000;
+	--light: #fff;
+}
+.container {
+	height: 100vh;
+	overflow-y: hidden;
+}
+header {
+	height: 30px;
+	background-color: var(--light);
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	z-index: 10;
+}
+header a {
+	font-size: 18px;
+	color: var(--dark);
+	text-decoration: none;
+}
+.color {
+	display: inline-block;
+	cursor: pointer;
+}
+main {
+	width: 3000px;
+	height: 100vh;
+	display: flex;
+}
+section {
+	width: 500px;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 50px 50px;
+	font-size: 440px;
+	overflow-y: hidden;
+	background-color: var(--light);
+	transition: background-color 0.3s;
+	cursor: grab;
+}
+section.drag {
+	opacity: 0;
+}
+.helvetica {
+	font-family: Helvetica, sans-serif;
+}
+.times-new-roman {
+	font-family: 'Times New Roman', Times, serif;
+}
+.impact {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.courier-new {
+	font-family: 'Courier New', Courier, monospace;
+}
+.verdana {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.comic-sans {
+	font-family: comic sans MS;
+}
+p {
+	margin: 0;
+	font-size: 700px;
+	font-weight: normal;
+	user-select: none;
+}
